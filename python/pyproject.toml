@@ -1,0 +1,10 @@
+[build-system]
+# Minimum requirements for the build system to execute.
+requires = [
+    "setuptools>=42",  # https://github.com/deepcharles/ruptures/pull/100#discussion_r553700339
+    "wheel",
+    "pybind11>=2.9.0",
+    "oldest-supported-numpy",  # https://github.com/scipy/oldest-supported-numpy
+    "includeigen"
+]
+build-backend = "setuptools.build_meta"
