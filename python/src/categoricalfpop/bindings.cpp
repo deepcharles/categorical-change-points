@@ -19,7 +19,7 @@ ei::ArrayXi getAFPCP_py(const py::EigenDRef<ei::ArrayXXi> signal, double penalty
       return getAFPCP(signal, penalty);
 }
 
-PYBIND11_MODULE(fpop, m)
+PYBIND11_MODULE(categoricalfpop, m)
 {
       m.doc() = "Change-point detection using functional pruning."; // optional
       m.def("get_peltcp", &getPeltCP_py,
